@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Captcha Generator</title>
+    <!--^===========> Font Awesome Library Icon  -->
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <!--*===========> Bootstrap   -->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <!--?===========> Main Style Sheet  -->
+    <link rel="stylesheet" href="./CSS/main.css" />
+  </head>
+  <body>
+    <div
+      class="wrapper min-vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div
+        class="bg-white w-35 rounded p-3 py-5 d-flex flex-column gap-3 justify-content-center align-items-center"
+      >
+        <h2 class="text-uppercase text-main fw-bold">Captcha Generator</h2>
+
+        <div class="d-flex gap-2 w-75 mx-auto">
+          <div class="capatcha-box w-100 position-relative">
+            <img
+              src="images/capatcha.png"
+              alt="background"
+              class="h-100 w-100 object-fit-cover rounded"
+            />
+            <span class="capatcha-text text-white" id="captchaText"></span>
+          </div>
+          <button type="button" class="btn btn-main" id="try">
+            <i class="fa-solid fa-arrow-rotate-right"></i>
+          </button>
+        </div>
+
+        <form class="w-75 mx-auto position-relative">
+          <input
+            type="text"
+            class="form-control border-main"
+            placeholder="Enter Capatcha"
+            id="input"
+          />
+          <button class="btn btn-main" id="check" type="submit">Check</button>
+        </form>
+      </div>
+    </div>
+    <!--&===========> Js Main File   -->
+    <script src="./JS/main.js"></script>
+  </body>
+</html>
